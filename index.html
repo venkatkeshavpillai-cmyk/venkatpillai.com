@@ -112,6 +112,11 @@ p { margin: 0 0 16px; max-width: 66ch; }
 .talk.featured { border-color: var(--brass); box-shadow: 0 1px 0 var(--brass); }
 .note { margin-top: 22px; color: var(--muted); font-size: 15px; }
 
+/* Video */
+.video-grid { display: grid; grid-template-columns: 320px 1fr; gap: 48px; align-items: center; }
+.video-frame { border-radius: 8px; overflow: hidden; border: 3px solid var(--brass); background: var(--navy-deep); aspect-ratio: 9 / 16; }
+.video-frame video { width: 100%; height: 100%; display: block; object-fit: cover; }
+
 /* Articles */
 .articles { list-style: none; margin: 0; padding: 0; }
 .articles li { display: grid; grid-template-columns: 1fr auto; gap: 4px 24px; padding: 18px 0; border-bottom: 1px solid var(--rule); }
@@ -160,6 +165,8 @@ footer a { color: #c9d2df; }
   .figures .wrap { grid-template-columns: repeat(2, 1fr); }
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 32px; }
   .talks, .offers { grid-template-columns: 1fr; }
+  .video-grid { grid-template-columns: 1fr; gap: 24px; }
+  .video-frame { max-width: 320px; }
   .row2 { grid-template-columns: 1fr; }
   section { padding: 56px 0; }
   .articles li { grid-template-columns: 1fr; }
@@ -267,6 +274,20 @@ footer a { color: #c9d2df; }
         </article>
       </div>
       <p class="note">Earlier platforms include ICAI, ASSOCHAM, CIMA and CFO Vault.</p>
+    </div>
+  </section>
+
+  <section id="cima">
+    <div class="wrap video-grid">
+      <div class="video-frame">
+        <video controls playsinline preload="metadata" src="cgma-week.mp4#t=0.5" aria-label="Venkat Pillai on his life journey as a Fellow member of CIMA"></video>
+      </div>
+      <div>
+        <p class="eyebrow">In my own words</p>
+        <h2>Life journey as a Fellow member of CIMA</h2>
+        <p>A short reflection, recorded for CGMA Week, on what the CIMA qualification has meant across my career, and the way forward for the profession.</p>
+        <p class="note">Under three minutes.</p>
+      </div>
     </div>
   </section>
 
