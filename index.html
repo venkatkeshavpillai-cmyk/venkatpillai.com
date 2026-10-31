@@ -4,274 +4,304 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Venkat Pillai</title>
-<meta name="description" content="Venkat Pillai, Global CFO at SLK Global. Cross-border finance, risk and governance across seven jurisdictions. Keynotes, board and advisory roles.">
+<meta name="description" content="Venkat Pillai, Global CFO at SLK Global. Cross-border finance, risk and governance across seven jurisdictions. Available for keynotes, board and advisory roles.">
+<meta property="og:title" content="Venkat Pillai · Global CFO">
+<meta property="og:description" content="Cross-border finance, risk and governance. Keynotes, board and advisory roles.">
+<meta property="og:url" content="https://venkatpillai.com/">
+<meta property="og:type" content="profile">
+<link rel="canonical" href="https://venkatpillai.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
-  /* Layout: a single ledger-like column, left-aligned, with ruled sections and a margin label for each */
-  --paper: #f6f7f8;
+  /* Layout: navy hero band with name and two calls to action, then white sections on a centred column, ending in an enquiry form */
+  --navy: #13294b;
+  --navy-deep: #0c1c35;
+  --ink: #1d2733;
+  --muted: #5b6573;
+  --paper: #fbfaf8;
   --surface: #ffffff;
-  --ink: #14202e;
-  --muted: #5a6573;
-  --rule: #d9dee4;
-  --accent: #1d6b57;
-  --accent-soft: #e3efea;
+  --rule: #e3e6ea;
+  --brass: #a8803f;
+  --brass-soft: #f4ecdf;
   --display: "Newsreader", Georgia, "Times New Roman", serif;
-  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #0f151c;
-    --surface: #151d26;
-    --ink: #e7ecf1;
-    --muted: #9aa6b3;
-    --rule: #26313d;
-    --accent: #6cc3a6;
-    --accent-soft: #17302a;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --paper: #0f151c;
-  --surface: #151d26;
-  --ink: #e7ecf1;
-  --muted: #9aa6b3;
-  --rule: #26313d;
-  --accent: #6cc3a6;
-  --accent-soft: #17302a;
-  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 html, body { margin: 0; }
 body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--body);
   font-size: 17px;
-  line-height: 1.6;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
-a { color: var(--accent); text-underline-offset: 3px; }
-a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+a { color: var(--navy); text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; border-radius: 3px; }
 
-.wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
 
-header.top {
-  border-bottom: 1px solid var(--rule);
-  padding: 20px 0;
-}
-header.top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
-.mark { font-family: var(--display); font-weight: 600; font-size: 20px; letter-spacing: 0.01em; }
-nav { display: flex; gap: 20px; flex-wrap: wrap; font-size: 15px; }
-nav a { color: var(--muted); text-decoration: none; }
-nav a:hover { color: var(--ink); }
+/* Top bar */
+.top { background: var(--navy-deep); color: #fff; }
+.top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-top: 16px; padding-bottom: 16px; }
+.mark { font-family: var(--display); font-size: 20px; font-weight: 500; letter-spacing: 0.02em; color: #fff; text-decoration: none; }
+.top nav { display: flex; gap: 22px; flex-wrap: wrap; font-size: 15px; }
+.top nav a { color: #c9d2df; text-decoration: none; }
+.top nav a:hover { color: #fff; }
 
-.hero { padding: 64px 0 48px; }
-.hero h1 {
-  font-family: var(--display);
-  font-weight: 500;
-  font-size: clamp(40px, 7vw, 64px);
-  line-height: 1.05;
-  margin: 0 0 12px;
-  text-wrap: balance;
+/* Hero */
+.hero { background: var(--navy); color: #fff; }
+.hero .wrap { display: grid; grid-template-columns: 1fr 260px; gap: 48px; align-items: center; padding-top: 72px; padding-bottom: 72px; }
+.hero h1 { font-family: var(--display); font-weight: 500; font-size: clamp(44px, 7vw, 68px); line-height: 1.02; margin: 0 0 14px; text-wrap: balance; }
+.creds { color: var(--brass-soft); font-size: 14px; letter-spacing: 0.14em; margin: 0 0 26px; }
+.lede { font-family: var(--display); font-size: clamp(22px, 3vw, 28px); line-height: 1.35; margin: 0 0 14px; max-width: 32ch; text-wrap: balance; }
+.sub { color: #c9d2df; margin: 0 0 32px; max-width: 52ch; }
+.ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn {
+  display: inline-block; padding: 13px 22px; border-radius: 4px;
+  font-family: var(--body); font-weight: 600; font-size: 15px; text-decoration: none;
+  border: 1px solid transparent; cursor: pointer; transition: background .15s, color .15s;
 }
-.creds { font-family: var(--mono); font-size: 14px; color: var(--muted); letter-spacing: 0.04em; margin: 0 0 28px; }
-.lede {
-  font-family: var(--display);
-  font-size: clamp(22px, 3vw, 28px);
-  line-height: 1.35;
-  max-width: 30ch;
-  margin: 0 0 32px;
-  text-wrap: balance;
+.btn-primary { background: var(--brass); color: #fff; }
+.btn-primary:hover { background: #94702f; }
+.btn-ghost { border-color: rgba(255,255,255,.45); color: #fff; }
+.btn-ghost:hover { background: rgba(255,255,255,.08); }
+.portrait {
+  width: 260px; aspect-ratio: 1; border-radius: 50%;
+  background: linear-gradient(145deg, #1e3a66, #0c1c35);
+  border: 3px solid var(--brass);
+  display: grid; place-items: center;
+  font-family: var(--display); font-size: 84px; color: var(--brass-soft); letter-spacing: 0.04em;
+  overflow: hidden;
 }
-.ledger {
-  display: flex; flex-wrap: wrap; gap: 8px;
-  font-family: var(--mono); font-size: 13px;
-}
-.ledger span {
-  border: 1px solid var(--rule);
-  background: var(--surface);
-  padding: 4px 10px;
-  border-radius: 3px;
-  font-variant-numeric: tabular-nums;
-}
-.ledger-note { font-size: 14px; color: var(--muted); margin: 10px 0 0; }
+.portrait img { width: 100%; height: 100%; object-fit: cover; }
 
-section { border-top: 1px solid var(--rule); padding: 44px 0; }
-.row { display: grid; grid-template-columns: 160px 1fr; gap: 32px; }
-.label {
-  font-family: var(--mono); font-size: 12px; text-transform: uppercase;
-  letter-spacing: 0.12em; color: var(--muted); padding-top: 6px;
-}
-h2 {
-  font-family: var(--display); font-weight: 500; font-size: 28px;
-  line-height: 1.2; margin: 0 0 16px; text-wrap: balance;
-}
-p { margin: 0 0 14px; max-width: 65ch; }
+/* Figures strip */
+.figures { background: var(--surface); border-bottom: 1px solid var(--rule); }
+.figures .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding-top: 28px; padding-bottom: 28px; }
+.fig { border-left: 2px solid var(--brass); padding-left: 16px; }
+.fig b { display: block; font-family: var(--display); font-weight: 500; font-size: 34px; line-height: 1.1; color: var(--navy); font-variant-numeric: tabular-nums; }
+.fig span { font-size: 14px; color: var(--muted); }
 
-.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
-.list li {
-  display: grid; grid-template-columns: 1fr auto; gap: 4px 24px;
-  padding: 14px 0; border-bottom: 1px solid var(--rule);
-}
-.list li:first-child { padding-top: 0; }
-.list .title { font-weight: 500; }
-.list .meta { color: var(--muted); font-size: 15px; grid-column: 1; }
-.list .date {
-  font-family: var(--mono); font-size: 13px; color: var(--muted);
-  grid-column: 2; grid-row: 1; white-space: nowrap; font-variant-numeric: tabular-nums;
-}
-.pill {
-  display: inline-block; font-family: var(--mono); font-size: 11px;
-  text-transform: uppercase; letter-spacing: 0.08em;
-  background: var(--accent-soft); color: var(--accent);
-  padding: 2px 8px; border-radius: 3px; margin-left: 8px; vertical-align: 2px;
-}
+/* Sections */
+section { padding: 72px 0; border-bottom: 1px solid var(--rule); }
+.eyebrow { font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brass); font-weight: 600; margin: 0 0 10px; }
+h2 { font-family: var(--display); font-weight: 500; font-size: clamp(30px, 4vw, 38px); line-height: 1.15; color: var(--navy); margin: 0 0 24px; text-wrap: balance; }
+p { margin: 0 0 16px; max-width: 66ch; }
 
+.about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; }
+.firms { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 24px; align-self: start; }
+.firms h3 { font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; font-weight: 600; }
+.firms ul { list-style: none; margin: 0 0 20px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.firms li { background: var(--paper); border: 1px solid var(--rule); border-radius: 3px; padding: 4px 10px; font-size: 14px; }
+.firms ul:last-child { margin-bottom: 0; }
+
+/* Talks */
+.talks { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.talk { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 22px; display: flex; flex-direction: column; gap: 8px; }
+.talk-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.pill { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brass); background: var(--brass-soft); padding: 3px 9px; border-radius: 3px; }
+.date { font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.talk h3 { font-family: var(--display); font-weight: 500; font-size: 21px; line-height: 1.3; margin: 0; color: var(--ink); }
+.talk .where { font-size: 15px; color: var(--muted); margin: 0; }
+.talk.featured { border-color: var(--brass); box-shadow: 0 1px 0 var(--brass); }
+.note { margin-top: 22px; color: var(--muted); font-size: 15px; }
+
+/* Articles */
+.articles { list-style: none; margin: 0; padding: 0; }
+.articles li { display: grid; grid-template-columns: 1fr auto; gap: 4px 24px; padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.articles li:first-child { padding-top: 0; }
+.articles b { font-weight: 600; }
+.articles .where { color: var(--muted); font-size: 15px; grid-column: 1; }
+.articles .date { grid-column: 2; grid-row: 1; }
+
+/* Offers */
 .offers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.offer {
-  background: var(--surface); border: 1px solid var(--rule); border-radius: 4px;
-  padding: 18px;
-}
-.offer h3 { font-family: var(--display); font-weight: 600; font-size: 20px; margin: 0 0 6px; }
+.offer { background: var(--surface); border: 1px solid var(--rule); border-top: 3px solid var(--navy); border-radius: 6px; padding: 24px; }
+.offer h3 { font-family: var(--display); font-weight: 500; font-size: 23px; margin: 0 0 8px; color: var(--navy); }
 .offer p { font-size: 15px; color: var(--muted); margin: 0; }
 
-.firms { color: var(--muted); }
-
-.contact-line { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 16px; }
-.contact-line .k { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-right: 8px; }
-.todo { background: var(--accent-soft); color: var(--accent); padding: 1px 6px; border-radius: 3px; font-size: 14px; }
-
-footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 14px; color: var(--muted); }
-
-@media (max-width: 720px) {
-  .row { grid-template-columns: 1fr; gap: 10px; }
-  .offers { grid-template-columns: 1fr; }
-  .hero { padding: 44px 0 36px; }
-  .list li { grid-template-columns: 1fr; }
-  .list .date { grid-column: 1; grid-row: auto; }
+/* Contact */
+#contact { background: var(--navy); color: #fff; border-bottom: none; }
+#contact h2 { color: #fff; }
+#contact .eyebrow { color: var(--brass-soft); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 48px; }
+.contact-intro p { color: #c9d2df; }
+.contact-intro a { color: #fff; }
+form { background: var(--surface); color: var(--ink); border-radius: 8px; padding: 28px; display: grid; gap: 16px; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+label { display: grid; gap: 6px; font-size: 14px; font-weight: 600; color: var(--ink); }
+label .opt { font-weight: 400; color: var(--muted); }
+input, select, textarea {
+  font: inherit; font-size: 16px; color: var(--ink);
+  border: 1px solid #cfd5dc; border-radius: 4px; padding: 11px 12px; background: #fff; width: 100%;
 }
-@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--brass); outline-offset: 0; border-color: var(--brass); }
+textarea { min-height: 110px; resize: vertical; }
+.consent { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; font-size: 14px; color: var(--muted); }
+.consent input { width: auto; margin-top: 4px; }
+.form-status { font-size: 15px; margin: 0; min-height: 1.2em; }
+.form-status.ok { color: #1f6b3a; }
+.form-status.err { color: #a12d2d; }
+form .btn-primary { justify-self: start; border: none; }
+
+footer { background: var(--navy-deep); color: #9fb0c6; font-size: 14px; }
+footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 24px; padding-bottom: 24px; }
+footer a { color: #c9d2df; }
+
+@media (max-width: 860px) {
+  .hero .wrap { grid-template-columns: 1fr; padding-top: 48px; padding-bottom: 56px; }
+  .portrait { width: 160px; font-size: 54px; order: -1; }
+  .figures .wrap { grid-template-columns: repeat(2, 1fr); }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+  .talks, .offers { grid-template-columns: 1fr; }
+  .row2 { grid-template-columns: 1fr; }
+  section { padding: 56px 0; }
+  .articles li { grid-template-columns: 1fr; }
+  .articles .date { grid-column: 1; grid-row: auto; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
 </style>
 </head>
 <body>
 
 <header class="top">
   <div class="wrap">
-    <div class="mark">Venkat Pillai</div>
+    <a class="mark" href="#">Venkat Pillai</a>
     <nav aria-label="Sections">
       <a href="#about">About</a>
-      <a href="#talks">Talks</a>
+      <a href="#talks">Speaking</a>
       <a href="#writing">Writing</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <div class="wrap hero">
-    <h1>Venkat Pillai</h1>
-    <p class="creds">CA · CPA · FCMA · CGMA · CFE</p>
-    <p class="lede">Global CFO. Cross-border finance, risk and governance.</p>
-    <div class="ledger" aria-label="Currencies of the jurisdictions I run finance across">
-      <span>AED</span><span>INR</span><span>PLN</span><span>RON</span><span>SGD</span><span>QAR</span><span>USD</span>
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Venkat Pillai</h1>
+      <p class="creds">CA · CPA · FCMA · CGMA · CFE</p>
+      <p class="lede">Global CFO. Cross-border finance, risk and governance.</p>
+      <p class="sub">I run finance for a nine-entity group across seven countries, and speak and advise on protecting margins, cash and controls in multi-country businesses.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#contact" data-reason="Speaking">Invite me to speak</a>
+        <a class="btn btn-ghost" href="#contact" data-reason="Board or advisory role">Board and advisory enquiries</a>
+      </div>
     </div>
-    <p class="ledger-note">Seven currencies, nine entities, one consolidation.</p>
+    <div class="portrait" aria-hidden="true">VP</div>
   </div>
+</div>
 
+<div class="figures">
+  <div class="wrap">
+    <div class="fig"><b>26+</b><span>years in finance</span></div>
+    <div class="fig"><b>7</b><span>jurisdictions</span></div>
+    <div class="fig"><b>9</b><span>entities consolidated</span></div>
+    <div class="fig"><b>5</b><span>professional qualifications</span></div>
+  </div>
+</div>
+
+<main>
   <section id="about">
-    <div class="wrap row">
-      <div class="label">About</div>
+    <div class="wrap about-grid">
       <div>
+        <p class="eyebrow">About</p>
         <h2>Finance across borders, from the inside</h2>
         <p>I am Group CFO of SLK Global, part of West Ireland Investments. The group runs nine entities across the UAE, India, Poland, Romania, Singapore, Qatar and the USA, in energy, procurement and sub-contracting.</p>
         <p>My work sits where margins usually leak: foreign exchange, tax and transfer pricing, cash across jurisdictions, and the controls that hold a multi-country group together.</p>
-        <p>Before SLK, I spent 26 years in finance with <span class="firms">GE, Dell, Cummins, Allianz, Deloitte, EY, Baker Tilly and Plan.Net TechNest</span>.</p>
         <p>Chartered Accountant in India (ICAI) and England &amp; Wales (ICAEW). Member, FICCI CFO Council. Based in Kochi.</p>
       </div>
+      <aside class="firms" aria-label="Career">
+        <h3>Earlier career</h3>
+        <ul>
+          <li>GE</li><li>Dell</li><li>Cummins</li><li>Allianz</li><li>Deloitte</li><li>EY</li><li>Baker Tilly</li><li>Plan.Net TechNest</li>
+        </ul>
+        <h3>Currencies I close in</h3>
+        <ul>
+          <li>AED</li><li>INR</li><li>PLN</li><li>RON</li><li>SGD</li><li>QAR</li><li>USD</li>
+        </ul>
+      </aside>
     </div>
   </section>
 
   <section id="talks">
-    <div class="wrap row">
-      <div class="label">Talks</div>
-      <div>
-        <h2>Recent and upcoming</h2>
-        <ul class="list">
-          <li>
-            <span class="title">Profitable growth in a high-cost world<span class="pill">Keynote</span></span>
-            <span class="date">6 Nov 2026</span>
-            <span class="meta">Finance Leadership Summit, PES University, Bengaluru</span>
-          </li>
-          <li>
-            <span class="title">What employers expect from tomorrow's finance professionals<span class="pill">Panel</span></span>
-            <span class="date">30 Oct 2026</span>
-            <span class="meta">CIMA &amp; ISDC Academia Next 2027, Bengaluru</span>
-          </li>
-          <li>
-            <span class="title">AI in finance and management accounting<span class="pill">Roundtable</span></span>
-            <span class="date">29 Oct 2026</span>
-            <span class="meta">AICPA &amp; CIMA Executive Research Roundtable, India</span>
-          </li>
-          <li>
-            <span class="title">When controls work but fraud still occurs: bypassing the procure-to-pay cycle<span class="pill">Instructor</span></span>
-            <span class="date">19 Aug 2026</span>
-            <span class="meta">ACFE Asia-Pacific Fraud Conference, Hong Kong · 4.5 CPE hours</span>
-          </li>
-          <li>
-            <span class="title">Show me your cash and I will tell you where you are bleeding<span class="pill">Moderator</span></span>
-            <span class="date">2026</span>
-            <span class="meta">The House of CFO, Bengaluru</span>
-          </li>
-          <li>
-            <span class="title">Talent, tech and transformation: the finance team of the future<span class="pill">Panel</span></span>
-            <span class="date">2026</span>
-            <span class="meta">BW Best CFO &amp; Finance Strategy Excellence Awards</span>
-          </li>
-        </ul>
-        <p style="margin-top:18px; color: var(--muted); font-size: 15px;">Earlier platforms include ICAI, ASSOCHAM, CIMA and CFO Vault.</p>
+    <div class="wrap">
+      <p class="eyebrow">Speaking</p>
+      <h2>Recent and upcoming</h2>
+      <div class="talks">
+        <article class="talk featured">
+          <div class="talk-top"><span class="pill">Keynote</span><span class="date">6 Nov 2026</span></div>
+          <h3>Profitable growth in a high-cost world</h3>
+          <p class="where">Finance Leadership Summit, PES University, Bengaluru</p>
+        </article>
+        <article class="talk">
+          <div class="talk-top"><span class="pill">Panel</span><span class="date">30 Oct 2026</span></div>
+          <h3>What employers expect from tomorrow's finance professionals</h3>
+          <p class="where">CIMA &amp; ISDC Academia Next 2027, Bengaluru</p>
+        </article>
+        <article class="talk">
+          <div class="talk-top"><span class="pill">Roundtable</span><span class="date">29 Oct 2026</span></div>
+          <h3>AI in finance and management accounting</h3>
+          <p class="where">AICPA &amp; CIMA Executive Research Roundtable, India</p>
+        </article>
+        <article class="talk">
+          <div class="talk-top"><span class="pill">Instructor</span><span class="date">19 Aug 2026</span></div>
+          <h3>When controls work but fraud still occurs: bypassing the procure-to-pay cycle</h3>
+          <p class="where">ACFE Asia-Pacific Fraud Conference, Hong Kong · 4.5 CPE hours</p>
+        </article>
+        <article class="talk">
+          <div class="talk-top"><span class="pill">Moderator</span><span class="date">2026</span></div>
+          <h3>Show me your cash and I will tell you where you are bleeding</h3>
+          <p class="where">The House of CFO, Bengaluru</p>
+        </article>
+        <article class="talk">
+          <div class="talk-top"><span class="pill">Panel</span><span class="date">2026</span></div>
+          <h3>Talent, tech and transformation: the finance team of the future</h3>
+          <p class="where">BW Best CFO &amp; Finance Strategy Excellence Awards</p>
+        </article>
       </div>
+      <p class="note">Earlier platforms include ICAI, ASSOCHAM, CIMA and CFO Vault.</p>
     </div>
   </section>
 
   <section id="writing">
-    <div class="wrap row">
-      <div class="label">Writing</div>
-      <div>
-        <h2>Articles</h2>
-        <ul class="list">
-          <li>
-            <span class="title">UK Bribery Act 2010: an analysis of Section 7</span>
-            <span class="date">Jul 2018</span>
-            <span class="meta">Compliance &amp; Ethics magazine, Society of Corporate Compliance and Ethics</span>
-          </li>
-          <li>
-            <span class="title">Conceptual content, Certificate Course on Internal Audit</span>
-            <span class="date">2018</span>
-            <span class="meta">The Institute of Chartered Accountants of India</span>
-          </li>
-          <li>
-            <span class="title">Risk assessment</span>
-            <span class="date">Apr 2014</span>
-            <span class="meta">The Chartered Accountant, journal of ICAI</span>
-          </li>
-        </ul>
-      </div>
+    <div class="wrap">
+      <p class="eyebrow">Writing</p>
+      <h2>Articles</h2>
+      <ul class="articles">
+        <li>
+          <b>UK Bribery Act 2010: an analysis of Section 7</b>
+          <span class="date">Jul 2018</span>
+          <span class="where">Compliance &amp; Ethics magazine, Society of Corporate Compliance and Ethics</span>
+        </li>
+        <li>
+          <b>Conceptual content, Certificate Course on Internal Audit</b>
+          <span class="date">2018</span>
+          <span class="where">The Institute of Chartered Accountants of India</span>
+        </li>
+        <li>
+          <b>Risk assessment</b>
+          <span class="date">Apr 2014</span>
+          <span class="where">The Chartered Accountant, journal of ICAI</span>
+        </li>
+      </ul>
     </div>
   </section>
 
   <section id="work-with-me">
-    <div class="wrap row">
-      <div class="label">Available for</div>
+    <div class="wrap">
+      <p class="eyebrow">Work with me</p>
+      <h2>Where I can help</h2>
       <div class="offers">
         <div class="offer">
           <h3>Keynotes and panels</h3>
-          <p>Margins, cash and risk in multi-country groups. AI in the finance function.</p>
+          <p>Margins, cash and risk in multi-country groups. Fraud in the procure-to-pay cycle. AI in the finance function.</p>
         </div>
         <div class="offer">
           <h3>Board roles</h3>
@@ -286,20 +316,105 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 14p
   </section>
 
   <section id="contact">
-    <div class="wrap row">
-      <div class="label">Contact</div>
-      <div>
-        <div class="contact-line">
-          <div><span class="k">LinkedIn</span><a href="https://www.linkedin.com/in/venkatpillai/">linkedin.com/in/venkatpillai</a></div>
-        </div>
+    <div class="wrap contact-grid">
+      <div class="contact-intro">
+        <p class="eyebrow">Contact</p>
+        <h2>Start a conversation</h2>
+        <p>For speaking invitations, board or advisory enquiries, or anything else, leave your details and I will reply personally.</p>
+        <p>You can also reach me on <a href="https://www.linkedin.com/in/venkatpillai/">LinkedIn</a>.</p>
       </div>
+      <form id="enquiry" novalidate>
+        <input type="hidden" name="_subject" value="New enquiry from venkatpillai.com">
+        <div class="row2">
+          <label for="f-name">Name
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </label>
+          <label for="f-org"><span>Organisation <span class="opt">(optional)</span></span>
+            <input id="f-org" name="organisation" type="text" autocomplete="organization">
+          </label>
+        </div>
+        <div class="row2">
+          <label for="f-email">Email
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </label>
+          <label for="f-phone"><span>Phone <span class="opt">(optional)</span></span>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+          </label>
+        </div>
+        <label for="f-reason">Reason
+          <select id="f-reason" name="reason">
+            <option>Speaking</option>
+            <option>Board or advisory role</option>
+            <option>Media or writing</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label for="f-msg">Message
+          <textarea id="f-msg" name="message" required></textarea>
+        </label>
+        <label class="consent" for="f-consent">
+          <input id="f-consent" name="consent" type="checkbox" required>
+          I agree that Venkat Pillai may store these details and contact me about this enquiry. They will not be shared or used for anything else.
+        </label>
+        <button class="btn btn-primary" type="submit">Send enquiry</button>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap">Venkat Pillai · Kochi, India</div>
+  <div class="wrap">
+    <span>© 2026 Venkat Pillai · Kochi, India</span>
+    <a href="https://www.linkedin.com/in/venkatpillai/">LinkedIn</a>
+  </div>
 </footer>
 
+<script>
+  // Form endpoint: set to the Formspree URL once the account exists, e.g. "https://formspree.io/f/abcdwxyz"
+  const FORM_ENDPOINT = "https://formspree.io/f/xvkkwzwg";
+
+  document.querySelectorAll('[data-reason]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var sel = document.getElementById('f-reason');
+      if (sel) sel.value = a.getAttribute('data-reason');
+    });
+  });
+
+  var form = document.getElementById('enquiry');
+  var status = document.getElementById('form-status');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    status.className = 'form-status';
+    if (!form.checkValidity()) {
+      status.textContent = 'Please fill in your name, email, message and the consent box.';
+      status.classList.add('err');
+      return;
+    }
+    if (!FORM_ENDPOINT) {
+      status.textContent = 'The form is not switched on yet. Please message me on LinkedIn for now.';
+      status.classList.add('err');
+      return;
+    }
+    status.textContent = 'Sending…';
+    fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    }).then(function (r) {
+      if (r.ok) {
+        form.reset();
+        status.textContent = 'Thank you. Your enquiry has been sent, and I will reply soon.';
+        status.classList.add('ok');
+      } else {
+        throw new Error('bad status');
+      }
+    }).catch(function () {
+      status.textContent = 'That did not go through. Please try again, or message me on LinkedIn.';
+      status.classList.add('err');
+    });
+  });
+</script>
+<!-- Visitor statistics: GoatCounter snippet goes here once the account exists -->
 </body>
 </html>
