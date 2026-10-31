@@ -112,6 +112,16 @@ p { margin: 0 0 16px; max-width: 66ch; }
 .talk.featured { border-color: var(--brass); box-shadow: 0 1px 0 var(--brass); }
 .note { margin-top: 22px; color: var(--muted); font-size: 15px; }
 
+/* Engagement list */
+.all-h { margin-top: 56px; }
+.year { font-family: var(--display); font-weight: 500; font-size: 24px; color: var(--brass); margin: 28px 0 4px; }
+.engagements { list-style: none; margin: 0; padding: 0; }
+.engagements li { display: grid; grid-template-columns: 90px 1fr auto; gap: 4px 20px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+.e-date { font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.e-main b { display: block; font-weight: 600; }
+.e-main .where { display: block; font-size: 15px; color: var(--muted); }
+.e-role { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brass); white-space: nowrap; }
+
 /* Video */
 .video-grid { display: grid; grid-template-columns: 320px 1fr; gap: 48px; align-items: center; }
 .video-frame { border-radius: 8px; overflow: hidden; border: 3px solid var(--brass); background: var(--navy-deep); aspect-ratio: 9 / 16; }
@@ -166,6 +176,8 @@ footer a { color: #c9d2df; }
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 32px; }
   .talks, .offers { grid-template-columns: 1fr; }
   .video-grid { grid-template-columns: 1fr; gap: 24px; }
+  .engagements li { grid-template-columns: 1fr; }
+  .e-role { order: -1; }
   .video-frame { max-width: 320px; }
   .row2 { grid-template-columns: 1fr; }
   section { padding: 56px 0; }
@@ -240,7 +252,7 @@ footer a { color: #c9d2df; }
   <section id="talks">
     <div class="wrap">
       <p class="eyebrow">Speaking</p>
-      <h2>Recent and upcoming</h2>
+      <h2>Highlights</h2>
       <div class="talks">
         <article class="talk featured">
           <div class="talk-top"><span class="pill">Keynote</span><span class="date">6 Nov 2026</span></div>
@@ -248,32 +260,139 @@ footer a { color: #c9d2df; }
           <p class="where">Finance Leadership Summit, PES University, Bengaluru</p>
         </article>
         <article class="talk">
-          <div class="talk-top"><span class="pill">Panel</span><span class="date">30 Oct 2026</span></div>
-          <h3>What employers expect from tomorrow's finance professionals</h3>
-          <p class="where">CIMA &amp; ISDC Academia Next 2027, Bengaluru</p>
-        </article>
-        <article class="talk">
-          <div class="talk-top"><span class="pill">Roundtable</span><span class="date">29 Oct 2026</span></div>
-          <h3>AI in finance and management accounting</h3>
-          <p class="where">AICPA &amp; CIMA Executive Research Roundtable, India</p>
-        </article>
-        <article class="talk">
           <div class="talk-top"><span class="pill">Instructor</span><span class="date">19 Aug 2026</span></div>
           <h3>When controls work but fraud still occurs: bypassing the procure-to-pay cycle</h3>
           <p class="where">ACFE Asia-Pacific Fraud Conference, Hong Kong · 4.5 CPE hours</p>
         </article>
         <article class="talk">
-          <div class="talk-top"><span class="pill">Moderator</span><span class="date">2026</span></div>
-          <h3>Show me your cash and I will tell you where you are bleeding</h3>
-          <p class="where">The House of CFO, Bengaluru</p>
+          <div class="talk-top"><span class="pill">Panel</span><span class="date">6 Nov 2025</span></div>
+          <h3>Finance reimagined: the tech-driven CFO playbook</h3>
+          <p class="where">4th Middle East CFO Vision &amp; Innovation Summit, Dubai</p>
         </article>
         <article class="talk">
-          <div class="talk-top"><span class="pill">Panel</span><span class="date">2026</span></div>
-          <h3>Talent, tech and transformation: the finance team of the future</h3>
-          <p class="where">BW Best CFO &amp; Finance Strategy Excellence Awards</p>
+          <div class="talk-top"><span class="pill">Keynote</span><span class="date">12 Dec 2025</span></div>
+          <h3>AI’s uneven economics, and AI in M&amp;A</h3>
+          <p class="where">CFO Connect Summit &amp; Awards, Finance 5.0, Pune</p>
         </article>
       </div>
-      <p class="note">Earlier platforms include ICAI, ASSOCHAM, CIMA and CFO Vault.</p>
+      <h2 class="all-h">All engagements</h2>
+      <div class="all">
+        <h3 class="year">2026</h3>
+        <ul class="engagements">
+          <li>
+            <span class="e-date">6 Nov</span>
+            <span class="e-main"><b>Profitable growth in a high-cost world</b><span class="where">Finance Leadership Summit, PES University, Bengaluru</span></span>
+            <span class="e-role">Keynote</span>
+          </li>
+          <li>
+            <span class="e-date">30 Oct</span>
+            <span class="e-main"><b>What employers expect from tomorrow’s finance professionals</b><span class="where">CIMA &amp; ISDC Academia Next 2027, Bengaluru</span></span>
+            <span class="e-role">Panel</span>
+          </li>
+          <li>
+            <span class="e-date">29 Oct</span>
+            <span class="e-main"><b>AI in finance and management accounting</b><span class="where">AICPA &amp; CIMA Executive Research Roundtable, India</span></span>
+            <span class="e-role">Roundtable</span>
+          </li>
+          <li>
+            <span class="e-date">Oct</span>
+            <span class="e-main"><b>Show me your cash flow, I’ll show you where you’re bleeding</b><span class="where">The House of CFO, 3rd edition, Bengaluru</span></span>
+            <span class="e-role">Session chair</span>
+          </li>
+          <li>
+            <span class="e-date">Oct</span>
+            <span class="e-main"><b>Tokenomics for the Indian CFO</b><span class="where">ETCFO roundtable with Google and Deloitte</span></span>
+            <span class="e-role">Panel</span>
+          </li>
+          <li>
+            <span class="e-date">25 Sep</span>
+            <span class="e-main"><b>How CFOs lead through growth, risk and volatility; The AI Atelier: scaling innovation while governing algorithmic risk</b><span class="where">CFO Story Club India Summit, Hyderabad</span></span>
+            <span class="e-role">Panel and moderator</span>
+          </li>
+          <li>
+            <span class="e-date">19 Aug</span>
+            <span class="e-main"><b>When controls work but fraud still occurs: bypassing the procure-to-pay cycle</b><span class="where">ACFE Asia-Pacific Fraud Conference, Hong Kong</span></span>
+            <span class="e-role">Instructor</span>
+          </li>
+          <li>
+            <span class="e-date">7 Aug</span>
+            <span class="e-main"><b>FraudCon 2026</b><span class="where">ACFE India Annual Conference, New Delhi</span></span>
+            <span class="e-role">Speaker</span>
+          </li>
+          <li>
+            <span class="e-date">Jul</span>
+            <span class="e-main"><b>Capital command: mastering liquidity in a volatile world</b><span class="where">CFO Connect Summit &amp; Awards, Finance 6.0, Chennai</span></span>
+            <span class="e-role">Panel and moderator</span>
+          </li>
+          <li>
+            <span class="e-date">12 Jul</span>
+            <span class="e-main"><b>MENA leadership: AI, governance and global expansion</b><span class="where">The 365 Circle CXO Roundtable, online</span></span>
+            <span class="e-role">Roundtable</span>
+          </li>
+          <li>
+            <span class="e-date">Jun</span>
+            <span class="e-main"><b>Talent, tech and transformation: building the finance team of the future</b><span class="where">9th BW CFO Finance Leadership &amp; Strategy Summit, Mumbai</span></span>
+            <span class="e-role">Panel</span>
+          </li>
+          <li>
+            <span class="e-date">Mar</span>
+            <span class="e-main"><b>Treasury innovation and financial resilience</b><span class="where">Treasury Leaders Summit &amp; Awards, New Delhi</span></span>
+            <span class="e-role">Speaker</span>
+          </li>
+        </ul>
+        <h3 class="year">2025</h3>
+        <ul class="engagements">
+          <li>
+            <span class="e-date">12 Dec</span>
+            <span class="e-main"><b>AI’s uneven economic impact; AI alchemy: the magic behind M&amp;A strategy</b><span class="where">CFO Connect Summit &amp; Awards, Finance 5.0, Pune</span></span>
+            <span class="e-role">Keynote and moderator</span>
+          </li>
+          <li>
+            <span class="e-date">6 Nov</span>
+            <span class="e-main"><b>Finance reimagined: the tech-driven CFO playbook</b><span class="where">4th Middle East CFO Vision &amp; Innovation Summit, Dubai</span></span>
+            <span class="e-role">Panel</span>
+          </li>
+          <li>
+            <span class="e-date">9 Oct</span>
+            <span class="e-main"><b>29th CFO Vision &amp; Innovation Summit</b><span class="where">Transformance Forums</span></span>
+            <span class="e-role">Speaker</span>
+          </li>
+          <li>
+            <span class="e-date">11 Sep</span>
+            <span class="e-main"><b>The last mile of integrity: leadership response to white-collar crime</b><span class="where">Fraud &amp; White Collar Crime Risk and Investigation Summit, Mumbai</span></span>
+            <span class="e-role">Speaker and moderator</span>
+          </li>
+          <li>
+            <span class="e-date">13 Jun</span>
+            <span class="e-main"><b>Unboxing strategic agility: CFOs navigating business transformation</b><span class="where">27th CFO Vision &amp; Innovation Summit, Hyderabad</span></span>
+            <span class="e-role">Fireside chat</span>
+          </li>
+          <li>
+            <span class="e-date">2025</span>
+            <span class="e-main"><b>Convocation address: leading in a VUCA world</b><span class="where">Marian College Kuttikkanam</span></span>
+            <span class="e-role">Chief guest</span>
+          </li>
+          <li>
+            <span class="e-date">21 Feb</span>
+            <span class="e-main"><b>The Finance Confluence: strategy, compliance and innovation</b><span class="where">Christ University, Bengaluru</span></span>
+            <span class="e-role">Panel</span>
+          </li>
+        </ul>
+        <h3 class="year">Earlier</h3>
+        <ul class="engagements">
+          <li>
+            <span class="e-date">May 2018</span>
+            <span class="e-main"><b>Project cost estimation and risk assessment</b><span class="where">Structured Learning Program, ISRO, Bengaluru</span></span>
+            <span class="e-role">Speaker</span>
+          </li>
+          <li>
+            <span class="e-date">2016</span>
+            <span class="e-main"><b>Finance Summit 2016</b><span class="where">Mudra Finance Club, NMIMS, Bengaluru</span></span>
+            <span class="e-role">Panel</span>
+          </li>
+        </ul>
+      </div>
+      <p class="note">Earlier platforms also include ICAI, ASSOCHAM and CIMA forums.</p>
     </div>
   </section>
 
@@ -296,6 +415,16 @@ footer a { color: #c9d2df; }
       <p class="eyebrow">Writing</p>
       <h2>Articles</h2>
       <ul class="articles">
+        <li>
+          <b>On giving and receiving: what does your hospitality policy say?</b>
+          <span class="date">Jul 2020</span>
+          <span class="where">Compliance &amp; Ethics Professional, Society of Corporate Compliance and Ethics</span>
+        </li>
+        <li>
+          <b>Benford’s Law still works</b>
+          <span class="date">May 2020</span>
+          <span class="where">Fraud Magazine, Association of Certified Fraud Examiners</span>
+        </li>
         <li>
           <b>UK Bribery Act 2010: an analysis of Section 7</b>
           <span class="date">Jul 2018</span>
@@ -322,7 +451,7 @@ footer a { color: #c9d2df; }
       <div class="offers">
         <div class="offer">
           <h3>Keynotes and panels</h3>
-          <p>Margins, cash and risk in multi-country groups. Fraud in the procure-to-pay cycle. AI in the finance function.</p>
+          <p>Margins, cash and risk in multi-country groups. Fraud and controls. AI economics in the finance function.</p>
         </div>
         <div class="offer">
           <h3>Board roles</h3>
