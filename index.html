@@ -178,6 +178,12 @@ form .btn-primary { justify-self: start; border: none; }
 footer { background: var(--navy-deep); color: #9fb0c6; font-size: 14px; }
 footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 24px; padding-bottom: 24px; }
 footer a { color: #c9d2df; }
+#privacy { padding-top: 48px; padding-bottom: 48px; border-top: 1px solid var(--rule); }
+#privacy .wrap { max-width: 760px; }
+#privacy h2 { font-size: 26px; }
+#privacy p { font-size: 15px; color: var(--muted); }
+#privacy b { color: var(--ink); }
+footer .links { display: flex; gap: 18px; }
 
 @media (max-width: 860px) {
   .hero .wrap { grid-template-columns: 1fr; padding-top: 48px; padding-bottom: 56px; }
@@ -570,6 +576,7 @@ footer a { color: #c9d2df; }
             <option>Board or advisory role</option>
             <option>Media or writing</option>
             <option>Other</option>
+            <option>Privacy request</option>
           </select>
         </label>
         <label for="f-msg">Message
@@ -577,11 +584,26 @@ footer a { color: #c9d2df; }
         </label>
         <label class="consent" for="f-consent">
           <input id="f-consent" name="consent" type="checkbox" required>
-          I agree that Venkat Pillai may store these details and contact me about this enquiry. They will not be shared or used for anything else.
+          <span>I have read the <a href="#privacy">privacy notice</a> and consent to Venkat Pillai processing the details I have provided to respond to this enquiry. I understand I can withdraw this consent at any time.</span>
         </label>
         <button class="btn btn-primary" type="submit">Send enquiry</button>
         <p class="form-status" id="form-status" role="status"></p>
       </form>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <div class="wrap">
+      <h2>Privacy notice</h2>
+      <p>This notice is given under the Digital Personal Data Protection Act, 2023.</p>
+      <p><b>Who is responsible.</b> Venkat Pillai is the Data Fiduciary for information submitted through this website. To contact me about your data, use the <a href="#contact">enquiry form</a> and choose “Privacy request”.</p>
+      <p><b>What is collected.</b> Your name, email address and message, plus your organisation and phone number if you choose to give them.</p>
+      <p><b>Why.</b> Only to reply to your enquiry and discuss the speaking, board, advisory or media opportunity you raise. Your details are not added to marketing lists, profiled, sold or shared with third parties.</p>
+      <p><b>Who processes it.</b> The form is delivered by Formspree, a service provider based in the United States, which acts only on my instructions. Visitor statistics come from GoatCounter, which uses no cookies and does not collect personal data.</p>
+      <p><b>How long it is kept.</b> Up to 12 months after our last exchange, then deleted, unless you ask for earlier deletion or the law requires longer retention.</p>
+      <p><b>Your rights.</b> You may ask for a summary of the data held about you; ask for it to be corrected, completed, updated or erased; withdraw your consent as easily as you gave it; and nominate someone to exercise these rights for you. I will acknowledge your request and respond within 30 days.</p>
+      <p><b>Complaints.</b> If you are not satisfied with my response, you may complain to the Data Protection Board of India.</p>
+      <p>Last updated: November 2026.</p>
     </div>
   </section>
 </main>
@@ -589,7 +611,7 @@ footer a { color: #c9d2df; }
 <footer>
   <div class="wrap">
     <span>© 2026 Venkat Pillai · Dubai · Bengaluru · Kochi</span>
-    <a href="https://www.linkedin.com/in/venkatpillai/">LinkedIn</a>
+    <span class="links"><a href="#privacy">Privacy notice</a><a href="https://www.linkedin.com/in/venkatpillai/">LinkedIn</a></span>
   </div>
 </footer>
 
