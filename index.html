@@ -92,6 +92,7 @@ a { color: var(--navy); text-underline-offset: 3px; }
 .top nav a.li { border: 1px solid var(--brass); color: #fff; padding: 2px 10px; border-radius: 3px; }
 .top nav a.li:hover { background: var(--brass); }
 @media (max-width: 480px) { .top nav { gap: 12px; font-size: 14px; } .top nav a.li { padding: 1px 8px; } }
+@media (max-width: 420px) { .top nav { gap: 9px; font-size: 13px; } .top nav a.li { padding: 1px 6px; } }
 
 /* Hero */
 .hero { background: var(--navy); color: #fff; }
@@ -171,6 +172,11 @@ p { margin: 0 0 16px; max-width: 66ch; }
 .e-main .where { display: block; font-size: 15px; color: var(--muted); }
 .e-role { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brass); white-space: nowrap; }
 
+/* Perspectives */
+.persp-head { margin-bottom: 40px; }
+.persp-head p { max-width: 640px; }
+.persp-themes { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+#perspectives h3 { font-family: var(--display); font-weight: 500; font-size: 26px; margin: 0 0 12px; }
 /* Video */
 .video-grid { display: grid; grid-template-columns: 320px 1fr; gap: 48px; align-items: center; }
 .video-frame { border-radius: 8px; overflow: hidden; border: 3px solid var(--brass); background: var(--navy-deep); aspect-ratio: 9 / 16; }
@@ -250,6 +256,7 @@ footer .links { display: flex; gap: 18px; }
     <nav aria-label="Sections">
       <a href="#about">About</a>
       <a href="#talks">Speaking</a>
+      <a href="#perspectives">Perspectives</a>
       <a href="#writing">Writing</a>
       <a href="#contact">Contact</a>
       <a class="li" href="https://www.linkedin.com/in/venkatpillai/" target="_blank" rel="noopener">LinkedIn</a>
@@ -549,14 +556,20 @@ footer .links { display: flex; gap: 18px; }
     </div>
   </section>
 
-  <section id="interview">
-    <div class="wrap video-grid">
+  <section id="perspectives">
+    <div class="wrap persp-head">
+      <p class="eyebrow">Perspectives</p>
+      <h2>Understanding Money and Business</h2>
+      <p>Short videos and notes on how money, risk and strategy work across borders, seen from the CFO&rsquo;s chair.</p>
+      <p class="persp-themes"><span class="pill">Cross-border finance</span> <span class="pill">Fraud and controls</span> <span class="pill">Margins and capital</span> <span class="pill">Geoeconomics</span></p>
+    </div>
+    <div class="wrap video-grid" id="interview">
       <div class="video-frame">
         <video controls playsinline preload="metadata" src="bw-cfo-interview.mp4#t=0.5" aria-label="Venkat Pillai in an interview with BW CFO World"></video>
       </div>
       <div>
         <p class="eyebrow">In conversation</p>
-        <h2>Interview with BW CFO World</h2>
+        <h3>Interview with BW CFO World</h3>
         <p>How the modern CFO strategises, recruits talent and navigates the uncertainties of business. Recorded for BW Businessworld at the 9th edition of the BW CFO Best CFO &amp; Finance Strategy Excellence Awards 2026, Mumbai.</p>
         <p class="note">About two minutes.</p>
       </div>
