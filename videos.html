@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video library · Understanding Money and Business with Venkat Pillai</title>
+<meta name="description" content="Short videos by Venkat Pillai (CA · CPA · FCMA · CGMA · CFE), Group CFO, explaining money, risk and business from the CFO's chair: leverage, unit economics, fraud, India's economy and more.">
+<meta property="og:title" content="Video library · Understanding Money and Business">
+<meta property="og:description" content="Short videos explaining money, risk and business from the CFO's chair.">
+<meta property="og:url" content="https://venkatpillai.com/videos.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://venkatpillai.com/og-card_2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://venkatpillai.com/videos.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #13294b; --navy-deep: #0c1c35; --ink: #1d2733; --muted: #5b6573;
+  --paper: #fbfaf8; --surface: #ffffff; --rule: #e3e6ea; --brass: #a8803f; --brass-soft: #f4ecdf;
+  --display: "Newsreader", Georgia, "Times New Roman", serif;
+  --body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+html, body { margin: 0; }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+a { color: var(--navy); text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; border-radius: 3px; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+.top { background: var(--navy-deep); color: #fff; }
+.top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-top: 16px; padding-bottom: 16px; }
+.mark { font-family: var(--display); font-size: 20px; font-weight: 500; letter-spacing: 0.02em; color: #fff; text-decoration: none; }
+.top nav { display: flex; gap: 22px; flex-wrap: wrap; font-size: 15px; }
+.top nav a { color: #c9d2df; text-decoration: none; }
+.top nav a:hover, .top nav a[aria-current] { color: #fff; }
+.top nav a.li { border: 1px solid var(--brass); color: #fff; padding: 2px 10px; border-radius: 3px; }
+.top nav a.li:hover { background: var(--brass); }
+
+.intro { background: var(--navy); color: #fff; }
+.intro .wrap { padding-top: 64px; padding-bottom: 56px; }
+.eyebrow { font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brass); font-weight: 600; margin: 0 0 10px; }
+.intro h1 { font-family: var(--display); font-weight: 500; font-size: clamp(36px, 6vw, 56px); line-height: 1.05; margin: 0 0 16px; text-wrap: balance; }
+.intro p { color: #c9d2df; max-width: 60ch; margin: 0 0 24px; }
+.intro .count { color: var(--brass-soft); font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 24px; }
+.btn { display: inline-block; padding: 12px 20px; border-radius: 4px; font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid transparent; }
+.btn-primary { background: var(--brass); color: #fff; }
+.btn-primary:hover { background: #94702f; }
+
+.jump { background: var(--surface); border-bottom: 1px solid var(--rule); position: sticky; top: 0; z-index: 5; }
+.jump .wrap { display: flex; gap: 8px; flex-wrap: wrap; padding-top: 14px; padding-bottom: 14px; }
+.chip { font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: var(--navy); background: var(--paper); border: 1px solid var(--rule); padding: 5px 12px; border-radius: 999px; text-decoration: none; }
+.chip:hover { border-color: var(--brass); }
+
+section { padding: 56px 0; border-bottom: 1px solid var(--rule); scroll-margin-top: 64px; }
+h2 { font-family: var(--display); font-weight: 500; font-size: clamp(28px, 4vw, 34px); line-height: 1.15; color: var(--navy); margin: 0 0 8px; }
+.lead { color: var(--muted); margin: 0 0 28px; max-width: 64ch; }
+
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px) { .grid { grid-template-columns: repeat(2, 1fr); gap: 14px; } }
+.vid { display: flex; flex-direction: column; gap: 10px; }
+.frame { position: relative; aspect-ratio: 9 / 16; border-radius: 8px; overflow: hidden; background: var(--navy-deep); border: 2px solid var(--brass); }
+.frame button { all: unset; cursor: pointer; position: absolute; inset: 0; display: block; }
+.frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.frame .play { position: absolute; left: 50%; top: 50%; width: 56px; height: 56px; margin: -28px 0 0 -28px; border-radius: 50%; background: rgba(12,28,53,.82); border: 2px solid var(--brass); }
+.frame .play::after { content: ""; position: absolute; left: 21px; top: 15px; border-style: solid; border-width: 12px 0 12px 19px; border-color: transparent transparent transparent #fff; }
+.frame button:hover .play { background: var(--brass); }
+.frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.vid h3 { font-family: var(--display); font-weight: 500; font-size: 18px; line-height: 1.3; margin: 0; color: var(--ink); }
+.vid p { font-size: 14px; color: var(--muted); margin: 0; }
+.vid .yt { font-size: 13px; }
+
+.soon { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+@media (max-width: 640px) { .soon { grid-template-columns: 1fr; } }
+.soon li { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--brass); border-radius: 4px; padding: 14px 16px; }
+.soon b { font-family: var(--display); font-weight: 500; font-size: 18px; color: var(--ink); display: block; }
+.soon span { font-size: 14px; color: var(--muted); }
+
+.note { color: var(--muted); font-size: 14px; margin: 24px 0 0; }
+footer { background: var(--navy-deep); color: #c9d2df; font-size: 14px; }
+footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 24px; padding-bottom: 24px; }
+footer a { color: #c9d2df; margin-left: 16px; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="/">Venkat Pillai</a>
+    <nav aria-label="Site">
+      <a href="/">Home</a>
+      <a href="/#talks">Speaking</a>
+      <a href="/videos.html" aria-current="page">Videos</a>
+      <a href="/#contact">Contact</a>
+      <a class="li" href="https://www.linkedin.com/in/venkatpillai/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="intro">
+    <div class="wrap">
+      <p class="eyebrow">Video library</p>
+      <h1>Understanding Money and Business</h1>
+      <p>Short videos on how money, risk and business really work, explained from the CFO&rsquo;s chair. Each one takes a single idea, works through one real example, and ends with a question worth thinking about.</p>
+      <p class="count" id="count"></p>
+      <a class="btn btn-primary" href="https://www.youtube.com/@venkatkeshavpillai?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube</a>
+    </div>
+  </div>
+
+  <nav class="jump" aria-label="Topics">
+    <div class="wrap" id="chips"></div>
+  </nav>
+
+  <div id="library"></div>
+
+  <section id="coming">
+    <div class="wrap">
+      <p class="eyebrow">Coming soon</p>
+      <h2>Next in the series</h2>
+      <p class="lead">Recorded and on their way, two a week.</p>
+      <ul class="soon">
+        <li><b>A café sells 2,000 coffees a month and makes nothing. Why?</b><span>Unit economics</span></li>
+        <li><b>Taj Hotels: revenue up 26%, EBITDA up 40%. How?</b><span>Operating leverage</span></li>
+        <li><b>Tata Steel: why shareholders feel a 10% fall as 14%</b><span>Financial leverage</span></li>
+        <li><b>$150 billion from Indians abroad. Does it matter?</b><span>India&rsquo;s remittances</span></li>
+        <li><b>When an army mobilises, who makes money?</b><span>The seen and the unseen</span></li>
+        <li><b>Same rupee, different return</b><span>Government spending and growth</span></li>
+        <li><b>Why a bank won&rsquo;t fund your startup</b><span>Risk capital</span></li>
+      </ul>
+      <p class="note">For information and education only. Not investment advice. Views are personal.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Venkat Pillai · Dubai · Bengaluru · Kochi</span>
+    <span><a href="/">Home</a><a href="https://www.linkedin.com/in/venkatpillai/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.youtube.com/@venkatkeshavpillai" target="_blank" rel="noopener">YouTube</a></span>
+  </div>
+</footer>
+
+<script>
+/* To add a video: add one line to the right series below, newest first. id = the 11-character YouTube ID. */
+var SERIES = [
+  { id: "markets", name: "Business and markets", lead: "How profits, losses and share prices really connect.", videos: [
+    { id: "6qvcDk5jEjQ", t: "Profits up 10%, market down 8%. Both true." },
+    { id: "GtRp894dS48", t: "When a loss isn’t quite a loss" }
+  ]},
+  { id: "risk", name: "Fraud, risk and controls", lead: "Thinking clearly about risk, probability and judgement.", videos: [
+    { id: "3X6w8VBz4nM", t: "99% accurate. Only 9% of alerts are real.", d: "Why a near-perfect fraud test still raises mostly false alarms." },
+    { id: "IWyiAcPuB4s", t: "Should AI decide your doubtful-debt provision?" }
+  ]},
+  { id: "india", name: "India’s economy", lead: "The numbers behind the headlines.", videos: [
+    { id: "0nAM7SHZAUY", t: "India grows at 7%, so why is GDP $2,750 a head?" },
+    { id: "foS9BBcQeIc", t: "Rupee: Asia’s top 3 or worst year? Both." },
+    { id: "4eK-DnUQgBQ", t: "RBI’s 20% rule: less currency risk, or just moved?" },
+    { id: "3cfrHdAB17Y", t: "The rate hike is the easy part. Watch your EMI." }
+  ]},
+  { id: "conversations", name: "Conversations and reflections", lead: "Interviews and personal notes.", videos: [
+    { id: "h7UWnZHb13Y", t: "How the modern CFO strategises, hires and handles uncertainty", d: "Interview with BW CFO World." },
+    { id: "Uuhn64r_02w", t: "My journey as a Fellow of CIMA", d: "A reflection for CGMA Week." }
+  ]}
+];
+
+(function () {
+  var lib = document.getElementById("library"), chips = document.getElementById("chips"), total = 0;
+  function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); }
+  SERIES.forEach(function (s) {
+    total += s.videos.length;
+    chips.insertAdjacentHTML("beforeend", '<a class="chip" href="#' + s.id + '">' + esc(s.name) + '</a>');
+    var cards = s.videos.map(function (v) {
+      return '<article class="vid"><div class="frame"><button type="button" data-id="' + v.id + '" aria-label="Play: ' + esc(v.t) + '">' +
+        '<img loading="lazy" src="https://i.ytimg.com/vi/' + v.id + '/oardefault.jpg" onerror="this.onerror=null;this.src=\'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg\'" alt="">' +
+        '<span class="play"></span></button></div><h3>' + esc(v.t) + '</h3>' + (v.d ? '<p>' + esc(v.d) + '</p>' : '') +
+        '<a class="yt" href="https://www.youtube.com/shorts/' + v.id + '" target="_blank" rel="noopener">Watch on YouTube</a></article>';
+    }).join("");
+    lib.insertAdjacentHTML("beforeend", '<section id="' + s.id + '"><div class="wrap"><h2>' + esc(s.name) + '</h2><p class="lead">' + esc(s.lead) + '</p><div class="grid">' + cards + '</div></div></section>');
+  });
+  chips.insertAdjacentHTML("beforeend", '<a class="chip" href="#coming">Coming soon</a>');
+  document.getElementById("count").textContent = total + " videos so far · new ones every week";
+  lib.addEventListener("click", function (e) {
+    var b = e.target.closest("button[data-id]"); if (!b) return;
+    var f = document.createElement("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/" + b.getAttribute("data-id") + "?autoplay=1&rel=0&playsinline=1";
+    f.title = b.getAttribute("aria-label").replace("Play: ", "");
+    f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    f.allowFullscreen = true;
+    b.parentNode.replaceChild(f, b);
+  });
+})();
+</script>
+<script data-goatcounter="https://venkatpillai.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
