@@ -147,6 +147,8 @@ footer a { color: #c9d2df; margin-left: 16px; }
 
 <script>
 /* To add a video: add one line to the right series below, newest first. id = the 11-character YouTube ID. */
+/* Videos with a designed cover saved in /covers/<id>.jpg */
+var COVERS = ["3X6w8VBz4nM","6qvcDk5jEjQ","GtRp894dS48","0nAM7SHZAUY","4eK-DnUQgBQ","3cfrHdAB17Y","foS9BBcQeIc","IWyiAcPuB4s"];
 var SERIES = [
   { id: "markets", name: "Business and markets", lead: "How profits, losses and share prices really connect.", videos: [
     { id: "6qvcDk5jEjQ", t: "Profits up 10%, market down 8%. Both true." },
@@ -176,7 +178,7 @@ var SERIES = [
     chips.insertAdjacentHTML("beforeend", '<a class="chip" href="#' + s.id + '">' + esc(s.name) + '</a>');
     var cards = s.videos.map(function (v) {
       return '<article class="vid"><div class="frame"><button type="button" data-id="' + v.id + '" aria-label="Play: ' + esc(v.t) + '">' +
-        '<img loading="lazy" src="https://i.ytimg.com/vi/' + v.id + '/oardefault.jpg" onload="if(this.naturalWidth<200&&!this.dataset.f){this.dataset.f=1;this.src=\'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg\'}" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=\'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg\'}" alt="">' +
+        '<img loading="lazy" src="' + (COVERS.indexOf(v.id) > -1 ? '/covers/' + v.id + '.jpg' : 'https://i.ytimg.com/vi/' + v.id + '/oardefault.jpg') + '" onload="if(this.naturalWidth<200&&!this.dataset.f){this.dataset.f=1;this.src=\'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg\'}" onerror="if(!this.dataset.f){this.dataset.f=1;this.src=\'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg\'}" alt="">' +
         '<span class="play"></span></button></div><h3>' + esc(v.t) + '</h3>' + (v.d ? '<p>' + esc(v.d) + '</p>' : '') +
         '<a class="yt" href="https://www.youtube.com/shorts/' + v.id + '" target="_blank" rel="noopener">Watch on YouTube</a></article>';
     }).join("");
